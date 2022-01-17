@@ -41,7 +41,7 @@ now you can type
 
 and you will get a stock quote. type hcp and you will get a list of historical share price changes. type gp and you get a graphic.
 
-this should all be familiar to bloomberg users.
+this should all be familiar to bloomberg users. for the time being you will have to input stock tickers that match the yahoo! formatting. deal with it.
 
 # functions
 
