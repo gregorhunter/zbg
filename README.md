@@ -8,9 +8,9 @@ this is zero terminal, a free python script that allows you to lookup and calcul
 
 one. a mac or a linux computer. a raspberry pi will do. no windows support just yet.
 
-two. if you've never used a command line before, well now is the perfect time to learn. go [here](https://www.learnenough.com/command-line-tutorial)
+two. you need to know how to use the terminal on your laptop. if you've never used a command line before, now is the perfect time to learn. go [here](https://www.learnenough.com/command-line-tutorial)
 
-### usage
+### installation
 
 here's what to do:
 
@@ -18,18 +18,36 @@ open up your terminal, go to wherever you want to download the code and type
 
 	git clone https://github.com/gregorhunter/zbg
 
-next, go to your home directory and find your .bashrc file.
+next, go to your home directory and find your terminal configuration file. you're going to add a macro that lets you run the program on the command line.
 
-if you're on linux that's
+on a mac, you need to update .zshrc.
+
+	open ~/.zshrc
+	
+Now copy and paste the following lines of code into the file. you need to change [PATH_TO_FILE] to the directory that you installed zbg.
+
+	alias zbg="python3 ~/[PATH_TO_FILE]/zbg/zbg.py"
+
+if you're on linux you'll need to update your .bashrc file.
 
     xdg-open ~/.bashrc
 
-scroll down to the end and add the following lines. change [PATH_TO_FILE] to the location of the zbg directory.
+scroll down to the end and add the following lines. again, change [PATH_TO_FILE] to the location of the zbg directory.
 
     function zbg() {
       ~/[PATH_TO_FILE]/zbg/zbg.py
 
 whoa! that was scary. trust me, nothing bad will happen.
+
+### it's not working
+
+okay, try again. whichever folder you were in when you ran git clone blah blah above, enter
+
+	pwd
+	
+and make sure that matches whatever you've put into [PATH_TO_FILE]. If you've got /home/your_user_name/ instead of ~/ that's fine.
+
+### usage
 
 now you can type
 
