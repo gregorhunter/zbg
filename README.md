@@ -23,10 +23,19 @@ next, go to your home directory and find your terminal configuration file. you'r
 on a mac, you need to update .zshrc.
 
 	open ~/.zshrc
+
+if this worked, continue to the next line. if this doesn't work and you receive an error message saying the file does not exist, you will need to create it.
+
+	cd ~
+	touch ./zshrc
 	
 Now copy and paste the following lines of code into the file. you need to change [PATH_TO_FILE] to the directory that you installed zbg.
 
 	alias zbg="python3 ~/[PATH_TO_FILE]/zbg/zbg.py"
+
+save and close the file and run the following in your terminal:
+
+	source ./zshrc
 
 if you're on linux you'll need to update your .bashrc file.
 
