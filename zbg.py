@@ -108,15 +108,11 @@ def gp(stockData):
     ax2.grid()
     plt.show()
 
-# TODO fully implement Q
-
 def q(stockData):
-    # TODO decide what you want output to look like
+    # displays the latest trading data on the stock and its name
+    companyName = yf.Ticker(ticker).info['shortName']
+    print(companyName)
     print(stockData.iloc[0])
-
-# TODO implement FRED
-
-# TODO implement bonds
 
 # output to excel. currently not used
 
