@@ -24,22 +24,32 @@ next, go to your home directory and find your terminal configuration file. you'r
 
 on a mac, you need to update .zshrc.
 
+	cd ~
 	open ~/.zshrc
 
-if this worked, continue to the next line. if this doesn't work and you receive an error message saying the file does not exist, you will need to create it.
+if this worked, continue to the next line. if this doesn't work and you receive an error message saying the file does not exist, you will need to create it, then run the same line of code to open the file.
 
 	touch ~/.zshrc
-	
-Now copy and paste the following lines of code into the file. you need to change [PATH_TO_FILE] to the directory that you installed zbg. (Remove the square brackets)
+	open ~/.zshrc
+
+if it's worked, you should see a new window in textEdit.
+
+now copy and paste the following lines of code into the file. you need to change [PATH_TO_FILE] to the directory that you installed zbg. (remember to remove the square brackets)
 
 	alias zbg="python3 ~/[PATH_TO_FILE]/zbg/zbg.py"
 	
-e.g. if that's in your Downloads folder, it should read ~/Downloads/zbg/zbg.py
+e.g. if that's in your Downloads folder, it should read 
 
-save and close the file and run the following in your terminal:
+	alias zbg="python3 ~/[PATH_TO_FILE]/zbg/zbg.py"
+	
+if you're using textEdit, press Command-S to save.
+
+close the file and run the following in your terminal:
 
 	source ~/.zshrc
-	
+
+now you should be good to go!
+
 ### for linux
 
 if you're on linux you'll need to update your .bashrc file.
@@ -50,6 +60,7 @@ scroll down to the end and add the following lines. again, change [PATH_TO_FILE]
 
     function zbg() {
       ~/[PATH_TO_FILE]/zbg/zbg.py
+	}
 
 whoa! that was scary. trust me, nothing bad will happen.
 
@@ -59,7 +70,7 @@ okay, try again. whichever folder you were in when you ran git clone blah blah a
 
 	pwd
 	
-and make sure that matches whatever you've put into [PATH_TO_FILE]. If you've got /home/your_user_name/ instead of ~/ that's fine.
+and make sure that matches whatever you've put into [PATH_TO_FILE]. if you've got /home/your_user_name/ instead of ~/ that's fine.
 
 ### usage
 
