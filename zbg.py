@@ -126,7 +126,8 @@ def outputExcel(stockData):
 # function selection
 
 def runZBG(start, end, ticker, func, flag=""): stockData = api_call(ticker, start, end)
-    if func == "GP": gp(stockData),
+    if func == "GP": 
+        gp(stockData)
     elif func == "HCP":
         hcp(stockData, flag)
     else:
