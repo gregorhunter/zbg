@@ -34,7 +34,7 @@ Now copy and paste the following lines of code into the file. you need to change
 
 save and close the file and run the following in your terminal:
 
-	source ./zshrc
+	source ~/.zshrc
 
 if you're on linux you'll need to update your .bashrc file.
 
