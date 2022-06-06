@@ -26,8 +26,7 @@ on a mac, you need to update .zshrc.
 
 if this worked, continue to the next line. if this doesn't work and you receive an error message saying the file does not exist, you will need to create it.
 
-	cd ~
-	touch ./zshrc
+	touch ~/.zshrc
 	
 Now copy and paste the following lines of code into the file. you need to change [PATH_TO_FILE] to the directory that you installed zbg.
 
