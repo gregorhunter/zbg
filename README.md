@@ -18,6 +18,16 @@ open up your terminal, go to wherever you want to download the code and type
 
 	git clone https://github.com/gregorhunter/zbg
 
+run the following lines of code to make sure you have all the right python packages
+
+	pip3 install --upgrade pip
+	pip3 install pandas
+	pip3 install pandas_datareader
+	pip3 install matplotlib
+	pip3 install yfinance
+	
+this may take a while
+
 next, go to your home directory and find your terminal configuration file. you're going to add a macro that lets you run the program on the command line.
 
 ### for mac
