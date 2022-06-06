@@ -81,8 +81,8 @@ def hcp(stockData, flag=["D"]):
     # calculates percentage change
     outputData['Daily Percent Change (%)'] = outputData['Close'].pct_change(-1) * 100
     # calculates cumulative percentage change
-    outputData['Cumulative Percent Change (%)'] = ((outputData['Close']/outputData['Close'].iloc[-1])) * 100
-    print(outputData.loc[:,('Close','Daily Change','Daily Percent Change (%)', 'Cumulative Percent Change (%)')][:-1])
+    outputData['Cumulative Percent Change (%)'] = ((outputData['Close']/outputData['Close'].iloc[-1])-1) * 100
+    print(outputData.loc[:,('Close','Daily Change','Daily Percent Change (%)', 'Cumulative Percent Change (%)')])
 
 def gp(stockData):
     # displays a graphic of the stock price and volume
