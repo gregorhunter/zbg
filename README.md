@@ -20,6 +20,8 @@ open up your terminal, go to wherever you want to download the code and type
 
 next, go to your home directory and find your terminal configuration file. you're going to add a macro that lets you run the program on the command line.
 
+### for mac
+
 on a mac, you need to update .zshrc.
 
 	open ~/.zshrc
@@ -37,6 +39,8 @@ e.g. if that's in your Downloads folder, it should read ~/Downloads/zbg/zbg.py
 save and close the file and run the following in your terminal:
 
 	source ~/.zshrc
+	
+### for linux
 
 if you're on linux you'll need to update your .bashrc file.
 
