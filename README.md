@@ -31,6 +31,8 @@ if this worked, continue to the next line. if this doesn't work and you receive 
 Now copy and paste the following lines of code into the file. you need to change [PATH_TO_FILE] to the directory that you installed zbg.
 
 	alias zbg="python3 ~/[PATH_TO_FILE]/zbg/zbg.py"
+	
+e.g. if that's in your Downloads folder, it should read ~/Downloads/zbg/zbg.py
 
 save and close the file and run the following in your terminal:
 
