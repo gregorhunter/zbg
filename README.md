@@ -50,9 +50,9 @@ now copy and paste the following lines of code into the file. you need to change
 	
 e.g. if that's in your Downloads folder, it should read 
 
-	alias zbg="python3 ~/[PATH_TO_FILE]/zbg/zbg.py"
+	alias zbg="python3 ~/Downloads/zbg/zbg.py"
 	
-if you're using textEdit, press Command-S to save.
+if you're using textEdit, press command-S to save.
 
 close the file and run the following in your terminal:
 
@@ -90,9 +90,13 @@ now you can type
   
  or 
  
-    zbg 0005.HK
+	zbg 0005.HK
 
-and you will get a stock quote. type hcp and you will get a list of historical share price changes. type gp and you get a graphic.
+and you will get a stock quote. this is equivalent to a q command on a terminal.
+
+type hcp and you will get a list of historical share price changes. 
+
+type gp and you get a graphic of share price and volume.
 
 this should all be familiar to bloomberg users. for the time being you will have to input stock tickers that match the yahoo! formatting. deal with it.
 
