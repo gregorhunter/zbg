@@ -10,6 +10,10 @@ one. a mac or a linux computer. a raspberry pi will do. no windows support just 
 
 two. you need to know how to use the terminal on your laptop. if you've never used a command line before, now is the perfect time to learn. go [here](https://www.learnenough.com/command-line-tutorial)
 
+on mac, press command-space to open spotlight search, type terminal and hit return.
+
+or press ctrl-alt-t on linux.
+
 ### installation
 
 here's what to do:
@@ -18,7 +22,7 @@ open up your terminal, go to wherever you want to download the code and type
 
 	git clone https://github.com/gregorhunter/zbg
 
-run the following lines of code to make sure you have all the right python packages
+run the following lines of code to make sure you have the latest version of python, pip, and all the right packages
 
 	pip3 install --upgrade pip
 	pip3 install pandas
@@ -26,7 +30,7 @@ run the following lines of code to make sure you have all the right python packa
 	pip3 install matplotlib
 	pip3 install yfinance
 	
-this may take a while
+this may take a while.
 
 next, go to your home directory and find your terminal configuration file. you're going to add a macro that lets you run the program on the command line.
 
@@ -71,6 +75,9 @@ scroll down to the end and add the following lines. again, change [PATH_TO_FILE]
     function zbg() {
       ~/[PATH_TO_FILE]/zbg/zbg.py
 	}
+    export -f zbg
+
+hit control-s to save.
 
 whoa! that was scary. trust me, nothing bad will happen.
 
@@ -80,7 +87,7 @@ okay, try again. whichever folder you were in when you ran git clone blah blah a
 
 	pwd
 	
-and make sure that matches whatever you've put into [PATH_TO_FILE]. if you've got /home/your_user_name/ instead of ~/ that's fine.
+and make sure that matches whatever you've put into [PATH_TO_FILE]. if you've got /home/your_user_name/ instead of ~/ that's fine. just remember to remove the square brackets.
 
 ### usage
 
